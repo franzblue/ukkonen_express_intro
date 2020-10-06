@@ -19,7 +19,7 @@ let index = 0;
 
 app.get('/quotes', (req, res) => {
     console.log('hi from get request');
-    res.sendStatus(418);
+    res.send(quotesData);
 });
 
 app.listen(port, () => {
